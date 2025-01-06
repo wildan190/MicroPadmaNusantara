@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Padma Nusantara - IT Solutions</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="./assets/styles/styles.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-gradient-to-b from-gray-800 via-gray-900 to-black min-h-screen flex flex-col"
+  >
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div
+        class="container mx-auto px-4 flex justify-between items-center py-4"
+      >
+        <a href="#" class="text-white text-xl font-bold"
+          >Micro Padma Nusantara</a
+        >
+        <button id="sidebarToggle" class="text-white md:hidden" title="Toggle Sidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="hidden md:block">
+          <a href="#services" class="mx-4 hover:text-gray-300">Services</a>
+          <a href="#about" class="mx-4 hover:text-gray-300">About Us</a>
+          <a href="#contact" class="mx-4 hover:text-gray-300">Contact</a>
+          <a href="#careers" class="mx-4 hover:text-gray-300">Careers</a>
+          <a href="#members" class="mx-4 hover:text-gray-300">Our Members</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+    <div class="sidebar blur">
+      <ul>
+        <li>
+          <a href="#services" class="block hover:text-gray-300">Services</a>
+        </li>
+        <li><a href="#about" class="block hover:text-gray-300">About Us</a></li>
+        <li>
+          <a href="#contact" class="block hover:text-gray-300">Contact</a>
+        </li>
+        <li>
+          <a href="#careers" class="block hover:text-gray-300">Careers</a>
+        </li>
+        <li>
+          <a href="#members" class="block hover:text-gray-300">Our Members</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <section
+      id="services"
+      class="py-16 min-h-screen flex items-center justify-center"
+      data-aos="fade-up"
+    >
+      <div class="text-center text-white">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+          Welcome to Micro Padma Nusantara
+        </h1>
+        <p class="text-lg lg:text-xl mb-8">
+          We provide cutting-edge IT Solutions tailored to your business needs.
+        </p>
+        <a
+          href="#about"
+          class="bg-white text-black font-bold py-2 px-4 rounded-full inline-block shadow-md hover:bg-gray-300 transition duration-300 ease-in-out"
+        >
+          <i class="fas fa-arrow-down mr-2"></i>
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-900" data-aos="fade-up">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-8 px-4"
+      >
+        <div class="md:w-1/2 mb-4 md:mb-0" data-aos="fade-right">
+          <img src="assets/img/img1.png" alt="About Us" class="rounded-lg" />
+        </div>
+        <div class="md:w-1/2 text-white" data-aos="fade-left">
+          <h2 class="text-4xl font-bold mb-4">About Us</h2>
+          <p class="text-lg mb-4">
+            At Micro Padma Nusantara, we are dedicated to providing top-notch IT
+            solutions to our clients. With years of experience and a team of
+            skilled professionals, we aim to deliver innovative and reliable
+            services tailored to your business needs.
+          </p>
+          <a
+            href="#contact"
+            class="bg-white text-black font-bold py-2 px-4 rounded-full inline-block shadow-md hover:bg-gray-300 transition duration-300 ease-in-out"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service Item 1 -->
+          <div
+            class="bg-gray-900 rounded-lg p-6 text-center"
+            data-aos="fade-right"
+          >
+            <i class="fas fa-desktop text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+            <p class="text-lg">
+              We design and develop responsive, user-friendly websites using the
+              latest technologies.
+            </p>
+          </div>
+          <!-- Service Item 2 -->
+          <div
+            class="bg-gray-900 rounded-lg p-6 text-center"
+            data-aos="fade-up"
+          >
+            <i class="fas fa-mobile-alt text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Mobile App Development</h3>
+            <p class="text-lg">
+              We specialize in building native and hybrid mobile applications
+              for iOS and Android platforms.
+            </p>
+          </div>
+          <!-- Service Item 3 -->
+          <div
+            class="bg-gray-900 rounded-lg p-6 text-center"
+            data-aos="fade-left"
+          >
+            <i class="fas fa-database text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+            <p class="text-lg">
+              We offer efficient database management solutions to organize and
+              secure your data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Product Section -->
+    <section id="feature-product" class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Feature Products</h2>
+          <p class="text-lg">
+            Discover our range of innovative applications designed to streamline
+            and enhance your business operations.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Product 1: MyCashier -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <div class="mb-4">
+              <i class="fas fa-cash-register fa-3x text-blue-400"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">MyCashier</h3>
+            <p class="text-lg mb-4">
+              An advanced cashier system designed to simplify and optimize your
+              retail operations.
+            </p>
+            <a href="#" class="text-blue-400 hover:text-blue-300"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <!-- Product 2: Nusa CRM -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <div class="mb-4">
+              <i class="fas fa-user-friends fa-3x text-blue-400"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Nusa CRM</h3>
+            <p class="text-lg mb-4">
+              A powerful CRM solution to manage customer relationships and boost
+              sales efficiency.
+            </p>
+            <a href="#" class="text-blue-400 hover:text-blue-300"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <!-- Product 3: SmartBiro -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <div class="mb-4">
+              <i class="fas fa-university fa-3x text-blue-400"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">SmartBiro</h3>
+            <p class="text-lg mb-4">
+              A comprehensive solution for bureaucracy and public service
+              management.
+            </p>
+            <a href="#" class="text-blue-400 hover:text-blue-300"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Experience</h2>
+          <p class="text-lg">
+            With over 4 years of experience in the industry, we have
+            successfully served a diverse range of clients and completed
+            numerous projects.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Experience Item - Years -->
+          <div class="bg-gray-900 rounded-lg p-6 text-center">
+            <i class="fas fa-calendar-alt text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-3xl font-semibold mb-2">4+ Years</h3>
+            <p class="text-lg">
+              We have over 4 years of experience providing top-notch IT
+              solutions.
+            </p>
+          </div>
+          <!-- Experience Item - Clients -->
+          <div class="bg-gray-900 rounded-lg p-6 text-center">
+            <i class="fas fa-users text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-3xl font-semibold mb-2">4+ Clients</h3>
+            <p class="text-lg">
+              We have successfully served more than 4 clients, delivering
+              tailored IT solutions to meet their business needs.
+            </p>
+          </div>
+          <!-- Experience Item - Projects -->
+          <div class="bg-gray-900 rounded-lg p-6 text-center">
+            <i class="fas fa-project-diagram text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-3xl font-semibold mb-2">10+ Projects</h3>
+            <p class="text-lg">
+              We have completed over 10 projects, ranging from web development
+              to mobile app development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Members Section -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Our Members</h2>
+          <p class="text-lg">
+            Meet our talented team members who are passionate about delivering
+            top-notch IT solutions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Member 1 -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <img
+              src="assets/img/member1.jpg"
+              class="mx-auto mb-4 rounded-full"
+              alt="Member 1"
+            />
+            <h3 class="text-xl font-semibold mb-2">Wildan</h3>
+            <p class="text-lg">Web Developer</p>
+            <!-- Social Media Icons -->
+            <div class="mt-4">
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Member 2 -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <img
+              src="assets/img/member2.jpg"
+              class="mx-auto mb-4 rounded-full"
+              alt="Member 2"
+            />
+            <h3 class="text-xl font-semibold mb-2">Danu</h3>
+            <p class="text-lg">Mobile App Developer</p>
+            <!-- Social Media Icons -->
+            <div class="mt-4">
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Member 3 -->
+          <div class="bg-gray-800 rounded-lg p-6 text-center">
+            <img
+              src="assets/img/member3.png"
+              class="mx-auto mb-4 rounded-full"
+              alt="Member 3"
+            />
+            <h3 class="text-xl font-semibold mb-2">Alex Johnson</h3>
+            <p class="text-lg">Database Administrator</p>
+            <!-- Social Media Icons -->
+            <div class="mt-4">
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-400 hover:text-blue-300 mx-2"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Careers</h2>
+          <p class="text-lg">
+            Join our team of passionate individuals who are dedicated to making
+            a difference in the world of IT solutions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Job Position 1 -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">Web Developer</h3>
+            <p class="text-lg mb-4">
+              We are looking for a skilled web developer to join our team and
+              help create innovative and user-friendly websites.
+            </p>
+            <a
+              href="mailto:wildanbelfiore@proton.me@example.com?subject=Web%20Developer%20Position%20Inquiry"
+              class="text-blue-400 hover:text-blue-300"
+              >Apply Now <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <!-- Job Position 2 -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">Mobile App Developer</h3>
+            <p class="text-lg mb-4">
+              We are seeking a talented mobile app developer to build native and
+              hybrid applications for various platforms.
+            </p>
+            <a
+              href="mailto:wildanbelfiore@proton.me@example.com?subject=Mobile%20App%20Developer%20Position%20Inquiry"
+              class="text-blue-400 hover:text-blue-300"
+              >Apply Now <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <!-- Job Position 3 -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">Database Administrator</h3>
+            <p class="text-lg mb-4">
+              We have an opening for a database administrator to manage and
+              secure databases for our clients.
+            </p>
+            <a
+              href="mailto:wildanbelfiore@proton.me@example.com?subject=Database%20Administrator%20Position%20Inquiry"
+              class="text-blue-400 hover:text-blue-300"
+              >Apply Now <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <!-- Job Position 4 -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-2">IT Consultant</h3>
+            <p class="text-lg mb-4">
+              We are in need of an experienced IT consultant to provide expert
+              advice and solutions to our clients.
+            </p>
+            <a
+              href="mailto:wildanbelfiore@proton.me@example.com?subject=IT%20Consultant%20Position%20Inquiry"
+              class="text-blue-400 hover:text-blue-300"
+              >Apply Now <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+          <p class="text-lg">
+            Have a question or want to start a project with us? Feel free to get
+            in touch.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Send us a message</h3>
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium mb-2"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium mb-2"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-sm font-medium mb-2"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:border-blue-500"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <!-- Contact Information -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+            <p class="text-lg mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>Jl. Profesor, Dr.
+              Insinyur Soetami, Kp. Malangnengah, Cijoro Pasir, Rangkasbitung,
+              Lebak, Banten, 42316
+            </p>
+            <p class="text-lg mb-2">
+              <i class="fas fa-envelope mr-2"></i>info@micropadmanusantara.com
+            </p>
+            <p class="text-lg mb-2">
+              <i class="fas fa-phone-alt mr-2"></i>+62-811-144-793
+            </p>
+            <div class="mt-4">
+              <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+              <div class="flex items-center">
+                <a href="#" class="text-blue-400 hover:text-blue-300 mr-4"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 mr-4"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300 mr-4"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="text-blue-400 hover:text-blue-300"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container mx-auto px-4 py-8 text-white text-center">
+        &copy; 2024 Micro Padma Nusantara. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/+62811144793"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- External JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document
+        .getElementById("sidebarToggle")
+        .addEventListener("click", function () {
+          document.querySelector(".sidebar").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
